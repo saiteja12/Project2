@@ -1,0 +1,30 @@
+.top-nav{
+  background-color: black;
+  overflow: hidden;
+  }
+ul{
+  display: flex;
+  list-style-type: none;
+}
+li{
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* .top-nav a:hover{
+  background-color: #e6d6ff;
+  } */
+ .logout-btn{
+   color: blue;
+   width: 100%;
+   /* padding: 10px 30px; */
+   cursor:pointer;
+   /* display: block; */
+   border: 1px solid black;
+   background-color: black;
+   font-size: 5;
+  }

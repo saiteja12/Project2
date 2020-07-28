@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: url("/static/images/da5.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.form-box{
+  width: 380px;
+  height: 480px;
+  background: #fff;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px;
+
+}
+.input-group{
+  width: 280px;
+  margin: 50px;
+
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn{
+  width: 100%;
+  padding: 10px 30px;
+  cursor:pointer;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #999;
+  background-color: #10abc9;
+  font-size: 500;
+}
+
+.heading{
+color: #06204f;
+padding-top: 80px;
+margin-left: 50px;
+margin-right: 40px;
+font-family: sans-serif;
+font-weight: 900;
+font-size: 30px;
+background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

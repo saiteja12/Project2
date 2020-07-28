@@ -1,0 +1,12 @@
+.container{
+  width: 480px;
+  height: 680px;
+  background: #fff;
+  position: relative;
+  margin: 1% auto;
+  padding: 5px;
+}
+.field{
+padding: 10px;
+
+}

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<div class="container">
+<form class="form_fields" action="{% url 'FormsPage' %}" method="post">
+  {{form|crispy}}
+  <input type="submit" name="submit" value="Submit">
+</form>
+</div>
+{% endblock %}

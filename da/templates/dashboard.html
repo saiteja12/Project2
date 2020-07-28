@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<script src="{% static 'js/dashboard.js' %}"></script>
+<div>
+    <button type="button" class="submit-button" onclick="graphs()">Display Dashboard</button>
+</div>
+<div class='container'>
+    <div class='col-sm-6' style='float:left;'>
+        <canvas id="myChart1" width="30" height="30"></canvas>
+    </div>
+    <div class='col-sm-6' style='float:right;'>
+        <canvas id="myChart2" width="30" height="30"></canvas>
+    </div>
+    <div class='col-sm-6' style='float:left;'>
+        <canvas id="myChart3" width="30" height="30"></canvas>
+    </div>
+    <div class='col-sm-6' style='float:right;'>
+        <canvas id="myChart4" width="30" height="30"></canvas>
+    </div>
+</div>
+{% endblock %}

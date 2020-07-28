@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+<table class="table table-borderless">
+  <thead class="border-bottom font-weight-bold">
+    <tr>
+      <td>Request No</td>
+      <td>Requestor name</td>
+      <td>Email</td>
+      <td>Account</td>
+      <td>Approver</td>
+      <td>Request Type</td>
+      <td>Request Priority</td>
+      <td>Task Status</td>
+      <td>Request Date</td>
+      <td>due_date</td>
+      <td>assignee</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ticket in ticket_list %}
+    <tr>
+      <td>{{ticket.id}}</td>
+      <td>{{ticket.requestor_name}}</td>
+      <td>{{ticket.email_address}}</td>
+      <td>{{ticket.account_name}}</td>
+      <td>{{ticket.approver_name}}</td>
+      <td>{{ticket.request_type}}</td>
+      <td>{{ticket.requestor_priority}}</td>
+      <td>{{ticket.task_status}}</td>
+      <td>{{ticket.request_date}}</td>
+      <td>{{ticket.due_date}}</td>
+      <td>{{ticket.assignee}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock %}
+
