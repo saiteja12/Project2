@@ -29,7 +29,7 @@ def emailNotify(sender, to, cc, Subject, content):
 
         # Send the message via our own SMTP server.
         From=sender
-        password='04vamsi@1998'
+        password='test'
         s = smtplib.SMTP_SSL('smtp.gmail.com',465)
         s.login(From,password)
         s.sendmail(msg['From'], to+cc, msg.as_string())
